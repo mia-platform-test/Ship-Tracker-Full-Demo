@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../configuration
+  - ship-tracking-service-demo.deployment.yml
+  - ship-tracking-service-demo.service.yml
+  - ship-tracking-backend-demo.deployment.yml
+  - ship-tracking-backend-demo.service.yml
+  - postgresql-database.deployment.yml
+  - postgresql-database.service.yml
+  - ship-tracking-service-demo.serviceaccount.yml
+  - ship-tracking-backend-demo.serviceaccount.yml
+  - postgresql-database.serviceaccount.yml
